@@ -12,10 +12,12 @@ use rtt_target::{rprintln, rtt_init_print};
 #[entry]
 fn main() -> ! {
     rtt_init_print!();
+
     let mut board = Board::take().unwrap();
     let mut timer = Timer::new(board.TIMER0);
-    board.display_pins.col1.set_low().unwrap();
     let mut row1 = board.display_pins.row1;
+
+    board.display_pins.col1.set_low().unwrap();
 
     loop {
         row1.set_low().unwrap();

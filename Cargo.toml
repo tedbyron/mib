@@ -1,2 +1,2 @@
 [workspace]
-members = ["rtt", "blinky"]
+members = ["rtt", "blinky", "roulette"]

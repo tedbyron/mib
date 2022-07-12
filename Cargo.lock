@@ -342,6 +342,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "roulette"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "microbit-v2",
+ "panic-halt",
+ "panic-rtt-target",
+ "rtt-target",
+]
+
+[[package]]
 name = "rtt"
 version = "0.1.0"
 dependencies = [
