@@ -9,21 +9,23 @@ use panic_halt as _;
 
 #[rustfmt::skip]
 const PIXELS: [(usize, usize); 16] = [
-    (0, 0), (0, 1), (0, 2), (0, 3), (0, 4),
+    (0, 0), (0, 1), (0, 2), (0, 3),
+                                (0, 4),
                                     (1, 4),
                                     (2, 4),
-                                    (3, 4),
-                                    (4, 4),
-                            (4, 3),
+                                (3, 4),
+                            (4, 4),
+                        (4, 3),
                     (4, 2),
-            (4, 1),
-    (4, 0),
-    (3, 0),
-    (2, 0),
-    (1, 0)
+                    (4, 1),
+                    (4, 0),
+                    (3, 0),
+
+
+                    (2, 0),
+                    (1, 0)
 ];
 
-#[allow(clippy::missing_const_for_fn, clippy::empty_loop)]
 #[entry]
 fn main() -> ! {
     let board = Board::take().unwrap();

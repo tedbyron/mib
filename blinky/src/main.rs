@@ -8,7 +8,6 @@ use microbit::Board;
 use panic_rtt_target as _;
 use rtt_target::{rprintln, rtt_init_print};
 
-#[allow(clippy::missing_const_for_fn, clippy::empty_loop)]
 #[entry]
 fn main() -> ! {
     rtt_init_print!();
