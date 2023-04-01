@@ -51,7 +51,6 @@ dependencies = [
  "cortex-m",
  "cortex-m-rt",
  "microbit-v2",
- "panic-halt",
  "panic-rtt-target",
  "rtt-target 0.4.0",
 ]
@@ -351,8 +350,6 @@ dependencies = [
  "cortex-m-rt",
  "microbit-v2",
  "panic-halt",
- "panic-rtt-target",
- "rtt-target 0.4.0",
 ]
 
 [[package]]
@@ -361,6 +358,7 @@ version = "0.1.0"
 dependencies = [
  "cortex-m",
  "cortex-m-rt",
+ "microbit-v2",
  "panic-rtt-target",
  "rtt-target 0.4.0",
 ]

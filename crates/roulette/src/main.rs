@@ -7,7 +7,7 @@ use microbit::hal::timer::Timer;
 use microbit::Board;
 use panic_halt as _;
 
-const PIXELS: [(usize, usize); 16] = [
+const PIXELS: &[(usize, usize)] = &[
     (0, 0),
     (0, 1),
     (0, 2),
@@ -35,7 +35,7 @@ fn main() -> ! {
     let (mut last_col, mut last_row) = (0, 0);
 
     loop {
-        for (col, row) in PIXELS {
+        for &(col, row) in PIXELS {
             leds[last_col][last_row] = 0;
             leds[col][row] = 1;
             display.show(&mut timer, leds, 50);

@@ -1,11 +1,16 @@
-[default.general]
-chip = "nrf52833_xxAA"
+[default]
+general.chip = "nrf52833_xxAA"
+reset.halt_afterwards = false
+rtt.enabled = false
+gdb.enabled = false
 
-[default.reset]
-halt_afterwards = false
+[blinky]
+rtt.enabled = true
 
-[default.rtt]
-enabled = true
+[roulette]
 
-[default.gdb]
-enabled = false
+[rtt]
+rtt.enabled = true
+
+[uart]
+rtt.enabled = true

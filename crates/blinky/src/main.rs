@@ -14,15 +14,15 @@ fn main() -> ! {
 
     let mut board = Board::take().unwrap();
     let mut timer = Timer::new(board.TIMER0);
-    let mut row1 = board.display_pins.row1;
+    let mut row3 = board.display_pins.row3;
 
-    board.display_pins.col1.set_low().unwrap();
+    board.display_pins.col3.set_low().unwrap();
 
     loop {
-        row1.set_low().unwrap();
+        row3.set_low().unwrap();
         rprintln!("dark");
         timer.delay_ms(1_000_u16);
-        row1.set_high().unwrap();
+        row3.set_high().unwrap();
         rprintln!("light");
         timer.delay_ms(1_000_u16);
     }
