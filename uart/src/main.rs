@@ -11,6 +11,7 @@ use panic_rtt_target as _;
 use rtt_target::rtt_init_print;
 
 mod serial_setup;
+
 use serial_setup::UartePort;
 
 #[entry]
