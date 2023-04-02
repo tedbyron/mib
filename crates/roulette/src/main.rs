@@ -1,5 +1,5 @@
-#![no_main]
 #![no_std]
+#![no_main]
 
 use cortex_m_rt::entry;
 use microbit::display::blocking::Display;

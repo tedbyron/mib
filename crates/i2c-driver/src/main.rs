@@ -3,6 +3,7 @@
 
 use cortex_m_rt::entry;
 use lsm303agr::{AccelOutputDataRate, Lsm303agr, Measurement};
+use microbit as _;
 use microbit::hal::Twim;
 use microbit::pac::twim0::frequency::FREQUENCY_A;
 use panic_rtt_target as _;

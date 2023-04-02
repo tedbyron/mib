@@ -226,6 +226,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "i2c-uart"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "heapless",
+ "lsm303agr",
+ "microbit-v2",
+ "nb 1.1.0",
+ "panic-rtt-target",
+ "rtt-target 0.4.0",
+]
+
+[[package]]
 name = "lock_api"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -508,7 +522,8 @@ dependencies = [
  "heapless",
  "microbit-v2",
  "nb 1.1.0",
- "panic-halt",
+ "panic-rtt-target",
+ "rtt-target 0.4.0",
 ]
 
 [[package]]
