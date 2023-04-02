@@ -508,8 +508,7 @@ dependencies = [
  "heapless",
  "microbit-v2",
  "nb 1.1.0",
- "panic-rtt-target",
- "rtt-target 0.4.0",
+ "panic-halt",
 ]
 
 [[package]]

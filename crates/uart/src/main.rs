@@ -7,8 +7,7 @@ use cortex_m_rt::entry;
 use heapless::Vec;
 use microbit::hal::prelude::*;
 use microbit::hal::uarte::{self, Baudrate, Parity};
-use panic_rtt_target as _;
-use rtt_target::rtt_init_print;
+use panic_halt as _;
 
 mod serial_setup;
 
@@ -16,8 +15,6 @@ use serial_setup::UartePort;
 
 #[entry]
 fn main() -> ! {
-    rtt_init_print!();
-
     let board = microbit::Board::take().unwrap();
     let serial = uarte::Uarte::new(
         board.UARTE0,
