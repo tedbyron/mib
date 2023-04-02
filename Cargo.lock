@@ -203,6 +203,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "i2c-driver"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "lsm303agr",
+ "microbit-v2",
+ "panic-rtt-target",
+ "rtt-target 0.4.0",
+]
+
+[[package]]
+name = "i2c-register"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "microbit-v2",
+ "panic-rtt-target",
+ "rtt-target 0.4.0",
+]
+
+[[package]]
 name = "lock_api"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -210,6 +233,16 @@ checksum = "435011366fe56583b16cf956f9df0095b405b82d76425bc8981c0e22e60ec4df"
 dependencies = [
  "autocfg",
  "scopeguard",
+]
+
+[[package]]
+name = "lsm303agr"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "aab0b8c3a75dfdebe9f79c738458da139e8111207d176e9fb6b360117432ac4f"
+dependencies = [
+ "embedded-hal",
+ "nb 1.1.0",
 ]
 
 [[package]]
@@ -320,9 +353,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.54"
+version = "1.0.55"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e472a104799c74b514a57226160104aa483546de37e839ec50e3c2e41dd87534"
+checksum = "1d0dd4be24fcdcfeaa12a432d588dc59bbad6cad3510c67e74a2b6b2fc950564"
 dependencies = [
  "unicode-ident",
 ]
@@ -475,7 +508,6 @@ dependencies = [
  "heapless",
  "microbit-v2",
  "nb 1.1.0",
- "panic-halt",
  "panic-rtt-target",
  "rtt-target 0.4.0",
 ]

@@ -4,13 +4,5 @@ reset.halt_afterwards = false
 rtt.enabled = false
 gdb.enabled = false
 
-[blinky]
-rtt.enabled = true
-
-[roulette]
-
 [rtt]
-rtt.enabled = true
-
-[uart]
 rtt.enabled = true
